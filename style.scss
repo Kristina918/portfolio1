@@ -3133,7 +3133,7 @@ margin-left: 32px;
     }
 
     .additional-information__left-box-grid{
-        grid-template-columns: 381px;
+        grid-template-columns: 380px;
         grid-template-rows: 261px 1fr 1fr 1fr;
         width: 380px !important;
 
@@ -3305,6 +3305,9 @@ margin-left: 32px;
     .form-shopping-card__button-get-a-quote--margin{
         margin-bottom: 25px;
     }
+    .dropdown-menu{
+        left: 18%;
+    }
 
 
 }
@@ -3326,5 +3329,15 @@ margin-left: 32px;
     }
     .right-menu__block1{
         max-width: 127px;
+    }
+    .hs-left-box{
+        width: 274px
+
+    }
+    .stock__grid{
+        grid-template-columns: 350px;
+    }
+    .stock__img1380{
+        width: 94%;
     }
 }
