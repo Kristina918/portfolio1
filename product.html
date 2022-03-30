@@ -263,7 +263,7 @@
                     <div class="mega-menu__margin-r"> <a class="mega-menu__filter">Man</a>
                     </div>
                     <div class="mega-menu__margin-r mega-menu__women"> <a class="mega-menu__filter">Women</a>
-                        <div class="mmb-flex mmb-flex__right">
+                        <div class="mmb-flex mmb-flex__right-women ">
                             <div class="mmb-flex__div1">
                                 <ul class="mega-menu-box">
                                     <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
@@ -345,7 +345,7 @@
 
                     </div>
                     <div class="mega-menu__margin-r mega-menu__kids"> <a class="mega-menu__filter">Kids</a>
-                        <div class="mmb-flex mmb-flex__right">
+                        <div class="mmb-flex mmb-flex__right-kids">
                             <div class="mmb-flex__div1">
                                 <ul class="mega-menu-box">
                                     <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
@@ -657,7 +657,7 @@
         <section class="section-cards">
             <div class="cards-box container">
                 <h3 class="cards-box__h3-header cards-box__h3-header--style-h3-product">you may like also</h3>
-                <div class="cards-box__grid">
+                <div class="cards-box__grid cards-box__grid--product-page ">
                     <div class="cards-box__big-card1">
                         <div class="cards-box__card1">
                             <a href="product.html"><img class="cards-box__img-card" src="img/productcards1.png"
@@ -737,6 +737,8 @@
 
         <footer class="background-footer background-footer  ">
             <img class="background-footer__img" src="img/footerback.png" alt="footer">
+            <img class="background-footer__img900 " src="img/footerback900.png" alt="foto">
+            <img class="background-footer__img580" src="img/footerback580.png" alt="foto">
             <div class="footer container">
                 <div class="footer__grid container ">
                     <div class="footer__grid-left">
@@ -768,9 +770,12 @@
                                     <div class="form-email">
                                         <input class="form-email__input" type="text" placeholder="Enter Your Email"
                                             name="mail" required>
+
                                     </div>
                                     <div class="form-email__submit">
-                                        <input class="form-email__submit-button" type="submit" value="Subscribe">
+                                        <input onclick="document.location='checkout.html'"
+                                            class="form-email__submit-button" type="submit" value="Subscribe">
+
                                     </div>
 
                                 </div>
