@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт визитка</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/f125855cea.js"></script>
+    <script src="https://use.fontawesome.com/584b50d8c7.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/select2/dist/css/select2.min.css">
+    <script src="/jquery.min.js"></script>
+    <script src="/select2/dist/js/select2.min.js"></script>
+    <script src="/select2/dist/js/i18n/ru.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-menu-box container">
+            <div class="header-menu--flex">
+                <div class="flex-box-1">
+                    <a href="index.html" class="header-menu__logo--stile">
+                        <img class="header-menu__img" src="img/logo.png" alt="logo">BRAN<span
+                            class="header-menu__logo--stile--d">D</span>
+                    </a>
+                    <div class="form-search">
+                        <div id="filter-input" class="groupinput">
+                            <button class="filterbuttom">Browse <i class="fa fa-caret-down"
+                                    aria-hidden="true"></i></button>
+                            <ul class="dropdown-menu">
+                                <h2 class="dropdown-menu--stile"><a class="dropdown-item" href="#">Women</a>
+                                    </h3>
+                                    <hr class="dropdown-divider dropdown-divider-style">
+                                    <li class="li-item"><a class="drop-item" href="#">Dresses</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Tops</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Sweaters/Knits</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Blazers</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Denim</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Leggings/Pants</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Skirts/Shorts</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Accessories</a></li>
+                                    <h3 class="dropdown-menu--stile"><a class="dropdown-item" href="#">Men</a></h3>
+                                    <hr class="dropdown-divider dropdown-divider-style ">
+                                    <li class="li-item"><a class="drop-item" href="#">Tees/Tank tops</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Shirts/Polos</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Sweaters</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Sweatshirts/Hoodies</a>
+                                    </li>
+                                    <li class="li-item"><a class="drop-item" href="#">Blazers</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Jackets/vests</a></li>
+                            </ul>
+                        </div>
+
+                        <input type="text" class="form-cont" placeholder="Search for Item...">
+                        <button class="search-button" type="button" aria-hidden="true"><i class="fa fa-search"
+                                aria-hidden="true"></i></button>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="flex-box-2">
+                    <div class="header-r-block">
+                        <a class="header-r-block__link" href="#"><i class="fa fa-shopping-cart fa-2x"
+                                aria-hidden="true"></i></a>
+                    </div>
+                    <div id="button-basket" class="goods">
+                        <button class="filterbuttom__bc filterbuttom--basket-card">My Account <i
+                                class="fa fa-caret-down marker" aria-hidden="true"></i></button>
+                        <div class="box-goods">
+                            <div class="cart-goods-big cart-goods-big__cgb-flex">
+                                <div class="cart-goods-l">
+                                    <img src="img/cartboxindex1.png" alt="cart">
+                                    <div class="cart-goods-l__content">
+                                        <h3 class=" cart-goods-l__h3">Rebox Zane
+                                        </h3>
+                                        <div class="rating-area">
+                                            <input type="radio" id="star-5" name="rating" value="5">
+                                            <label for="star-5" title="Оценка «5»"></label>
+                                            <input type="radio" id="star-4" name="rating" value="4">
+                                            <label for="star-4" title="Оценка «4»"></label>
+                                            <input type="radio" id="star-3" name="rating" value="3">
+                                            <label for="star-3" title="Оценка «3»"></label>
+                                            <input type="radio" id="star-2" name="rating" value="2">
+                                            <label for="star-2" title="Оценка «2»"></label>
+                                            <input type="radio" id="star-1" name="rating" value="1">
+                                            <label for="star-1" title="Оценка «1»"></label>
+                                        </div>
+                                        <p class="cart-goods-l__p">1 x $250</p>
+
+                                    </div>
+                                </div>
+                                <div class="cart-goods-r">
+                                    <button class="close-button">
+                                        <i class="fa fa-times-circle" aria-hidden="true"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+                            <hr class="dropdown-divider dropdown-divider__bottom-border">
+                            <div class="cart-goods-big cart-goods-big__cgb-flex">
+                                <div class="cart-goods-l">
+                                    <img src="img/cartboxindex2.png" alt="cart">
+                                    <div class="cart-goods-l__content">
+                                        <h3 class=" cart-goods-l__h3">Rebox Zane
+                                        </h3>
+                                        <div class="rating-area">
+                                            <input type="radio" id="star-5" name="rating" value="5">
+                                            <label for="star-5" title="Оценка «5»"></label>
+                                            <input type="radio" id="star-4" name="rating" value="4">
+                                            <label for="star-4" title="Оценка «4»"></label>
+                                            <input type="radio" id="star-3" name="rating" value="3">
+                                            <label for="star-3" title="Оценка «3»"></label>
+                                            <input type="radio" id="star-2" name="rating" value="2">
+                                            <label for="star-2" title="Оценка «2»"></label>
+                                            <input type="radio" id="star-1" name="rating" value="1">
+                                            <label for="star-1" title="Оценка «1»"></label>
+                                        </div>
+                                        <p class="cart-goods-l__p">1 x $250</p>
+
+                                    </div>
+                                </div>
+                                <div class="cart-goods-r">
+                                    <button class="close-button">
+                                        <i class="fa fa-times-circle" aria-hidden="true"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+                            <hr class="dropdown-divider dropdown-divider__bottom-border">
+                            <div class="total total__flex">
+                                <p class="total__p">TOTAL </p>
+                                <p class="total__p">$500.00</p>
+                            </div>
+                            <div class="button-cb">
+                                <button
+                                    class="filterbuttom__bc  filterbuttom--basket-card filterbuttom--new-size filterbuttom--new-margin">Checkout</button>
+                                <button class="filterbuttom__bc filterbuttom--basket-card filterbuttom--new-size ">Go
+                                    to
+                                    cart</button>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+        <hr class="dropdown-divider dropdown-divider__menu">
+        <div class="header-menu-box container">
+            <nav class="mega-menu">
+                <div class="mega-menu__flex">
+                    <div class="mega-menu__margin-r mega-menu__home"> <a class="mega-menu__filter">Home</a>
+                        <div class="mmb-flex">
+                            <div class="mmb-flex__div1">
+                                <ul class="mega-menu-box">
+                                    <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
+                                    <hr class="dropdown-divider dropdown-divider__catalog">
+                                    <li class="li-item li-item--margin "><a class="drop-item drop-item__big-menu"
+                                            href="#">Dresses</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Tops</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Sweaters/Knits</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Blazers</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Denim</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Leggings/Pants</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Skirts/Shorts</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Accessories</a></li>
+
+
+                                </ul>
+                            </div>
+                            <div class="mmb-flex__div1">
+                                <ul class="mega-menu-box">
+                                    <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
+                                    <hr class="dropdown-divider dropdown-divider__catalog">
+                                    <li class="li-item li-item--margin "><a class="drop-item drop-item__big-menu"
+                                            href="#">Dresses</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Tops</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Sweaters/Knits</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Blazers</a>
+                                    </li>
+                                    <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
+                                    <hr class="dropdown-divider dropdown-divider__catalog">
+                                    <li class="li-item li-item--margin "><a class="drop-item drop-item__big-menu"
+                                            href="#">Dresses</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Tops</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Sweaters/Knits</a></li>
+
+                                </ul>
+
+                            </div>
+                            <div class="mmb-flex__div1">
+                                <ul class="mega-menu-box">
+                                    <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
+                                    <hr class="dropdown-divider dropdown-divider__catalog">
+                                    <li class="li-item li-item--margin "><a class="drop-item drop-item__big-menu"
+                                            href="#">Dresses</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Tops</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Sweaters/Knits</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Blazers</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Denim</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Leggings/Pants</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Skirts/Shorts</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Accessories</a></li>
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="mega-menu__margin-r"> <a class="mega-menu__filter">Man</a>
+                    </div>
+                    <div class="mega-menu__margin-r mega-menu__women"> <a class="mega-menu__filter">Women</a>
+                        <div class="mmb-flex mmb-flex__right">
+                            <div class="mmb-flex__div1">
+                                <ul class="mega-menu-box">
+                                    <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
+                                    <hr class="dropdown-divider dropdown-divider__catalog">
+                                    <li class="li-item li-item--margin "><a class="drop-item drop-item__big-menu"
+                                            href="#">Dresses</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Tops</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Sweaters/Knits</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Blazers</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Denim</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Leggings/Pants</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Skirts/Shorts</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Accessories</a></li>
+
+
+                                </ul>
+                            </div>
+                            <div class="mmb-flex__div1">
+                                <ul class="mega-menu-box">
+                                    <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
+                                    <hr class="dropdown-divider dropdown-divider__catalog">
+                                    <li class="li-item li-item--margin "><a class="drop-item drop-item__big-menu"
+                                            href="#">Dresses</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Tops</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Sweaters/Knits</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Blazers</a>
+                                    </li>
+                                    <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
+                                    <hr class="dropdown-divider dropdown-divider__catalog">
+                                    <li class="li-item li-item--margin "><a class="drop-item drop-item__big-menu"
+                                            href="#">Dresses</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Tops</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Sweaters/Knits</a></li>
+
+                                </ul>
+
+                            </div>
+                            <div class="mmb-flex__div1">
+                                <ul class="mega-menu-box">
+                                    <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
+                                    <hr class="dropdown-divider dropdown-divider__catalog">
+                                    <li class="li-item li-item--margin "><a class="drop-item drop-item__big-menu"
+                                            href="#">Dresses</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Tops</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Sweaters/Knits</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Jackets/Coats</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a href="#"><img src="img/menuimg.png"
+                                                alt="foto"></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mega-menu__margin-r mega-menu__kids"> <a class="mega-menu__filter">Kids</a>
+                        <div class="mmb-flex mmb-flex__right">
+                            <div class="mmb-flex__div1">
+                                <ul class="mega-menu-box">
+                                    <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
+                                    <hr class="dropdown-divider dropdown-divider__catalog">
+                                    <li class="li-item li-item--margin "><a class="drop-item drop-item__big-menu"
+                                            href="#">Dresses</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Tops</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Sweaters/Knits</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Blazers</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Denim</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Leggings/Pants</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Skirts/Shorts</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Accessories</a></li>
+
+
+                                </ul>
+                            </div>
+                            <div class="mmb-flex__div1">
+                                <ul class="mega-menu-box">
+                                    <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
+                                    <hr class="dropdown-divider dropdown-divider__catalog">
+                                    <li class="li-item li-item--margin "><a class="drop-item drop-item__big-menu"
+                                            href="#">Dresses</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Tops</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Sweaters/Knits</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Blazers</a>
+                                    </li>
+                                    <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
+                                    <hr class="dropdown-divider dropdown-divider__catalog">
+                                    <li class="li-item li-item--margin "><a class="drop-item drop-item__big-menu"
+                                            href="#">Dresses</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Tops</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Sweaters/Knits</a></li>
+
+                                </ul>
+
+                            </div>
+                            <div class="mmb-flex__div1">
+                                <ul class="mega-menu-box">
+                                    <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
+                                    <hr class="dropdown-divider dropdown-divider__catalog">
+                                    <li class="li-item li-item--margin "><a class="drop-item drop-item__big-menu"
+                                            href="#">Dresses</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Tops</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Sweaters/Knits</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Blazers</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Denim</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Leggings/Pants</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Skirts/Shorts</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Accessories</a></li>
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="mega-menu__margin-r"> <a class="mega-menu__filter">Accoseriese</a>
+                    </div>
+                    <div class="mega-menu__margin-r"> <a class="mega-menu__filter">Featured</a>
+                    </div>
+                    <div class="mega-menu__margin-r mega-menu__hot-deals"> <a class="mega-menu__filter">Hot Deals</a>
+                        <div class="mmb-flex mmb-flex__right">
+                            <div class="mmb-flex__div1">
+                                <ul class="mega-menu-box">
+                                    <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
+                                    <hr class="dropdown-divider dropdown-divider__catalog">
+                                    <li class="li-item li-item--margin "><a class="drop-item drop-item__big-menu"
+                                            href="#">Dresses</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Tops</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Sweaters/Knits</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Blazers</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Denim</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Leggings/Pants</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Skirts/Shorts</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Accessories</a></li>
+
+
+                                </ul>
+                            </div>
+                            <div class="mmb-flex__div1">
+                                <ul class="mega-menu-box">
+                                    <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
+                                    <hr class="dropdown-divider dropdown-divider__catalog">
+                                    <li class="li-item li-item--margin "><a class="drop-item drop-item__big-menu"
+                                            href="#">Dresses</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Tops</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Sweaters/Knits</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Blazers</a>
+                                    </li>
+                                    <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
+                                    <hr class="dropdown-divider dropdown-divider__catalog">
+                                    <li class="li-item li-item--margin "><a class="drop-item drop-item__big-menu"
+                                            href="#">Dresses</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Tops</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Sweaters/Knits</a></li>
+
+                                </ul>
+
+                            </div>
+                            <div class="mmb-flex__div1">
+                                <ul class="mega-menu-box">
+                                    <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
+                                    <hr class="dropdown-divider dropdown-divider__catalog">
+                                    <li class="li-item li-item--margin "><a class="drop-item drop-item__big-menu"
+                                            href="#">Dresses</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Tops</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Sweaters/Knits</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Blazers</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Denim</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Leggings/Pants</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Skirts/Shorts</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Accessories</a></li>
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </nav>
+        </div>
+        <nav>
+            <div class="breadcrumb-box__big-box">
+                <div class="breadcrumb-box container">
+                    <div class="breadcrumb-box__box-r">
+                        <a class="breadcrumb-box__box-r-info">NEW ARRIVALS</a>
+
+                    </div>
+                    <div class="breadcrumb-box__box-l">
+                        <ul class="breadcrumb-box__ul">
+                            <li><a class="breadcrumb-box__a" href="index.html">HOME / </a></li>
+                            <li><a class="breadcrumb-box__a" href="#">MEN / </a></li>
+                            <li class="active"> NEW ARRIVALS</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="checkout-big-box container">
+        <details class="checkout-box__details" open>
+            <summary class="checkout-box__summary">
+                <h3 class="checkout-box__h3">01. Shipping Adress</h3>
+            </summary>
+            <div class="checkout-box">
+                <form class="checkout-box__form-1" action="#">
+
+                    <p class="checkout-box__p-3">Check as a guest or register</p>
+                    <p class="checkout-box__p">Register with us for future convenience</p>
+                    <div class="checkout-box__box-radio-input">
+                        <input class="checkout-box__input-radio" type="radio" id="contactChoice1" name="contact"
+                            value="checkout">
+                        <label class="checkout-box__input-checkout-label checkout-box__input-checkout-label--margin "
+                            for="contactChoice1">checkout as
+                            guest</label>
+                        <br>
+
+                        <input class="checkout-box__input-radio" type="radio" id="contactChoice2" name="contact"
+                            value="register">
+                        <label class="checkout-box__input-checkout-label" for="contactChoice2">register</label>
+                    </div>
+                    <p class="checkout-box__p-3">register and save time!</p>
+                    <p class="checkout-box__p checkout-box__p--margin">Register with us for future convenience</p>
+                    <p class="checkout-box__p checkout-box__p--margin-14"><i class="fa fa-angle-double-right"
+                            aria-hidden="true"></i>Fast and easy
+                        checkout</p>
+                    <p class="checkout-box__p checkout-box__p--margin-40"><i class="fa fa-angle-double-right"
+                            aria-hidden="true"></i>Easy access to
+                        your order history and
+                        status</p>
+                    <button class="form-shopping-card__button-get-a-quote form-shopping-card__button-get-a-quote--width"
+                        type="submit">get a quote</button>
+
+
+                </form>
+                <form class="checkout-box__form-2" action="#">
+                    <p class="checkout-box__p-3">Already registed?</p>
+                    <p class="checkout-box__p">Please log in below</p>
+                    <div class="" style="display: flex; flex-direction: column;">
+                        <label class="checkout-box__control-label" for="username">EMAIL
+                            ADDRESS <span class="checkout-box__required">*</span></label>
+                        <input class="checkout-box__email-address" type="email" required placeholder="email@email.ru">
+                    </div>
+                    <div style="display: flex; flex-direction: column;">
+                        <label class="checkout-box__control-label" for="username">PASSWORD <span
+                                class="checkout-box__required">*</span></label>
+                        <input class="checkout-box__password" type="password" required placeholder="Password">
+                    </div>
+
+                    <p class="checkout-box__p-2">* Required Fileds</p>
+
+                    <div>
+                        <button
+                            class="form-shopping-card__button-get-a-quote form-shopping-card__button-get-a-quote--width form-shopping-card__button-get-a-quote--margin"
+                            type="submit">Log in</button>
+                        <a class="checkout-box__a" href="#">Forgot Password ?</a>
+
+
+                    </div>
+
+
+
+                </form>
+
+            </div>
+        </details>
+        <details class="checkout-box__details">
+            <summary class="checkout-box__summary">
+                <h3 class="checkout-box__h3">02. BILLING INFORMATION</h3>
+            </summary>
+            <div class="checkout-box">
+                <form class="checkout-box__form-1" action="#">
+
+                    <p class="checkout-box__p-3">Check as a guest or register</p>
+                    <p class="checkout-box__p">Register with us for future convenience</p>
+                    <div class="checkout-box__box-radio-input">
+                        <input class="checkout-box__input-radio" type="radio" id="contactChoice1" name="contact"
+                            value="checkout">
+                        <label class="checkout-box__input-checkout-label checkout-box__input-checkout-label--margin "
+                            for="contactChoice1">checkout as
+                            guest</label>
+                        <br>
+
+                        <input class="checkout-box__input-radio" type="radio" id="contactChoice2" name="contact"
+                            value="register">
+                        <label class="checkout-box__input-checkout-label" for="contactChoice2">register</label>
+                    </div>
+                    <p class="checkout-box__p-3">register and save time!</p>
+                    <p class="checkout-box__p checkout-box__p--margin">Register with us for future convenience</p>
+                    <p class="checkout-box__p checkout-box__p--margin-14"><i class="fa fa-angle-double-right"
+                            aria-hidden="true"></i>Fast and easy
+                        checkout</p>
+                    <p class="checkout-box__p checkout-box__p--margin-40"><i class="fa fa-angle-double-right"
+                            aria-hidden="true"></i>Easy access to
+                        your order history and
+                        status</p>
+                    <button class="form-shopping-card__button-get-a-quote form-shopping-card__button-get-a-quote--width"
+                        type="submit">get a quote</button>
+
+
+                </form>
+                <form class="checkout-box__form-2" action="#">
+                    <p class="checkout-box__p-3">Already registed?</p>
+                    <p class="checkout-box__p">Please log in below</p>
+                    <div class="" style="display: flex; flex-direction: column;">
+                        <label class="checkout-box__control-label" for="username">EMAIL
+                            ADDRESS <span class="checkout-box__required">*</span></label>
+                        <input class="checkout-box__email-address" type="email" required placeholder="email@email.ru">
+                    </div>
+                    <div style="display: flex; flex-direction: column;">
+                        <label class="checkout-box__control-label" for="username">PASSWORD <span
+                                class="checkout-box__required">*</span></label>
+                        <input class="checkout-box__password" type="password" required placeholder="Password">
+                    </div>
+
+                    <p class="checkout-box__p-2">* Required Fileds</p>
+
+                    <div>
+                        <button
+                            class="form-shopping-card__button-get-a-quote form-shopping-card__button-get-a-quote--width form-shopping-card__button-get-a-quote--margin"
+                            type="submit">Log in</button>
+                        <a class="checkout-box__a" href="#">Forgot Password ?</a>
+
+
+                    </div>
+
+
+
+                </form>
+
+            </div>
+        </details>
+        <details class="checkout-box__details">
+            <summary class="checkout-box__summary">
+                <h3 class="checkout-box__h3">03. SHIPPING INFORMATION</h3>
+            </summary>
+            <div class="checkout-box">
+                <form class="checkout-box__form-1" action="#">
+
+                    <p class="checkout-box__p-3">Check as a guest or register</p>
+                    <p class="checkout-box__p">Register with us for future convenience</p>
+                    <div class="checkout-box__box-radio-input">
+                        <input class="checkout-box__input-radio" type="radio" id="contactChoice1" name="contact"
+                            value="checkout">
+                        <label class="checkout-box__input-checkout-label checkout-box__input-checkout-label--margin "
+                            for="contactChoice1">checkout as
+                            guest</label>
+                        <br>
+
+                        <input class="checkout-box__input-radio" type="radio" id="contactChoice2" name="contact"
+                            value="register">
+                        <label class="checkout-box__input-checkout-label" for="contactChoice2">register</label>
+                    </div>
+                    <p class="checkout-box__p-3">register and save time!</p>
+                    <p class="checkout-box__p checkout-box__p--margin">Register with us for future convenience</p>
+                    <p class="checkout-box__p checkout-box__p--margin-14"><i class="fa fa-angle-double-right"
+                            aria-hidden="true"></i> Fast and easy
+                        checkout</p>
+                    <p class="checkout-box__p checkout-box__p--margin-40"><i class="fa fa-angle-double-right"
+                            aria-hidden="true"></i> Easy access to
+                        your order history and
+                        status</p>
+                    <button class="form-shopping-card__button-get-a-quote form-shopping-card__button-get-a-quote--width"
+                        type="submit">get a quote</button>
+
+
+                </form>
+                <form class="checkout-box__form-2" action="#">
+                    <p class="checkout-box__p-3">Already registed?</p>
+                    <p class="checkout-box__p">Please log in below</p>
+                    <div class="" style="display: flex; flex-direction: column;">
+                        <label class="checkout-box__control-label" for="username">EMAIL
+                            ADDRESS <span class="checkout-box__required">*</span></label>
+                        <input class="checkout-box__email-address" type="email" required placeholder="email@email.ru">
+                    </div>
+                    <div style="display: flex; flex-direction: column;">
+                        <label class="checkout-box__control-label" for="username">PASSWORD <span
+                                class="checkout-box__required">*</span></label>
+                        <input class="checkout-box__password" type="password" required placeholder="Password">
+                    </div>
+
+                    <p class="checkout-box__p-2">* Required Fileds</p>
+
+                    <div>
+                        <button
+                            class="form-shopping-card__button-get-a-quote form-shopping-card__button-get-a-quote--width form-shopping-card__button-get-a-quote--margin"
+                            type="submit">Log in</button>
+                        <a class="checkout-box__a" href="#">Forgot Password ?</a>
+
+
+                    </div>
+
+
+
+                </form>
+
+            </div>
+        </details>
+        <details class="checkout-box__details">
+            <summary class="checkout-box__summary">
+                <h3 class="checkout-box__h3">04. SHIPPING METHOD</h3>
+            </summary>
+        </details>
+        <details class="checkout-box__details">
+            <summary class="checkout-box__summary">
+                <h3 class="checkout-box__h3">05. PAYMENT METHOD</h3>
+            </summary>
+        </details>
+        <details class="checkout-box__details">
+            <summary class="checkout-box__summary">
+                <h3 class="checkout-box__h3">06. ORDER REVIEW</h3>
+            </summary>
+        </details>
+
+
+
+    </div>
+
+
+
+    <footer class="background-footer background-footer__margin-none  ">
+        <img class="background-footer__img" src="img/footerback.png" alt="footer">
+        <div class="footer container">
+            <div class="footer__grid container ">
+                <div class="footer__grid-left">
+                    <aside class="footer__flex-review">
+                        <img class="footer__img-review" src="img/reviewfoto.png" alt="foto">
+                        <p style="text-align: left;" class="footer__review-p1">“Vestibulum quis
+                            porttitor dui! Quisque
+                            viverra nunc mi,
+                            a pulvinar purus condimentum a. Aliquam condimentum mattis neque
+                            sed pretium”<br><br><span class="footer__review-p2--red">Bin
+                                Burhan</span><br> <span class="footer__review-p2"></span>Dhaka, Bd</p><br>
+
+                    </aside>
+                    <div class="block-bottom-big">
+                        <div class="block1"></div>
+                        <div class="block1__color-block"></div>
+                        <div class="block1"></div>
+
+                    </div>
+
+
+                </div>
+                <div class="footer__grid-right">
+                    <div class="grid-right-box">
+                        <h3 class="footer__input-h3">Subscribe</h3>
+                        <h4 class="footer__input-h4">FOR OUR NEWLETTER AND PROMOTION</h4>
+                        <form action="#">
+                            <div class="form-email-big-box">
+                                <div class="form-email">
+                                    <input class="form-email__input" type="text" placeholder="Enter Your Email"
+                                        name="mail" required>
+                                </div>
+                                <div class="form-email__submit">
+                                    <input class="form-email__submit-button" type="submit" value="Subscribe">
+                                </div>
+
+                            </div>
+
+
+                        </form>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </footer>
+    <footer class="footer-2 container">
+        <div class="footer-2__left-box">
+            <a href="#" class="header-menu__logo--stile">
+                <img class="header-menu__img" src="img/logo.png" alt="logo">BRAN<span
+                    class="header-menu__logo--stile--d">D</span>
+            </a>
+            <p class="footer-2__p">Objectively transition extensive data rather than cross functional
+                solutions. Monotonectally
+                syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate
+                an expanded array of processes and cross-unit partnerships. <br> <br>
+                Efficiently plagiarize 24/365 action items and focused infomediaries.
+                Distinctively seize superior initiatives for wireless technologies. Dynamically
+                optimize.
+            </p>
+        </div>
+        <div class="footer-2__right-box">
+            <div class="information__block-1">
+                <h3 class="information__h3"><a href="" class="information__a-h3">COMPANY</a></h3>
+                <ul class="information__ul">
+                    <li class="information__li"><a href="" class="information__a">Home</a></li>
+                    <li class="information__li"><a href="" class="information__a">Shop</a></li>
+                    <li class="information__li"><a href="" class="information__a">About</a></li>
+                    <li class="information__li"><a href="" class="information__a">How It Works</a>
+                    </li>
+                    <li class="information__li"><a href="" class="information__a">Contact</a></li>
+                </ul>
+
+            </div>
+            <div class="information__block-2">
+                <h3 class="information__h3"><a href="" class="information__a-h3">INFORMATION</a></h3>
+                <ul class="information__ul">
+                    <li class="information__li"><a href="" class="information__a">Tearms &
+                            Condition</a></li>
+                    <li class="information__li"><a href="" class="information__a">Privacy Policy</a>
+                    </li>
+                    <li class="information__li"><a href="" class="information__a">How to Buy</a>
+                    </li>
+                    <li class="information__li"><a href="" class="information__a">How to Sell</a>
+                    </li>
+                    <li class="information__li"><a href="" class="information__a">Promotion</a></li>
+
+                </ul>
+
+            </div>
+            <div class="information__block-3">
+                <h3 class="information__h3"><a href="" class="information__a-h3">SHOP CATEGORY</a></h3>
+                <ul class="information__ul">
+                    <li class="information__li"><a href="" class="information__a">Men</a></li>
+                    <li class="information__li"><a href="" class="information__a">Women</a></li>
+                    <li class="information__li"><a href="" class="information__a">Child</a></li>
+                    <li class="information__li"><a href="" class="information__a">Apparel</a></li>
+                    <li class="information__li"><a href="" class="information__a">Brows All</a></li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+
+    </footer>
+    <div class="footer-bottom">
+        <div class="footer-bottom-big container">
+            <div class="footer-bottom-box1">
+                <p class="footer-bottom-box-text">© 2021 Brand All Rights Reserved.</p>
+            </div>
+            <div class="footer-bottom-box2">
+                <div class="footer-box1">
+                    <i class="fa fa-facebook fa-block" aria-hidden="true"></i>
+                </div>
+                <div class="footer-box1">
+                    <i class="fa fa-instagram fa-block" aria-hidden="true"></i>
+                </div>
+                <div class="footer-box1">
+                    <i class="fa fa-pinterest-p fa-block" aria-hidden="true"></i>
+                </div>
+                <div class="footer-box1">
+                    <i class="fa fa-twitter fa-block" aria-hidden="true"></i>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+        <script>
+            let goodsElem = document.getElementById('button-basket');
+            let filterbuttom__bcElem = goodsElem.querySelector('.filterbuttom__bc');
+
+            filterbuttom__bcElem.onclick = function () {
+                goodsElem.classList.toggle('open');
+            };
+        </script>
+        <script>
+            let groupinputElem = document.getElementById('filter-input');
+            let filterbuttomElem = groupinputElem.querySelector('.filterbuttom');
+
+            filterbuttomElem.onclick = function () {
+                groupinputElem.classList.toggle('open');
+            };
+
+        </script>
+        <script>
+            $("#slider-range").slider({
+                range: true,
+                min: 0,
+                max: 600,
+                values: [52, 400],
+                step: 1,
+                slide: function (event, ui) {
+                    $("#rub-left").text(ui.values[0] + 'р.'); // текст левого span
+                    $("#rub-right").text(ui.values[1] + 'р.'); // текст правого span
+                }
+            });
+            $("#price").val("$" + $("#slider-range").slider("values", 0) +
+                " - $" + $("#slider-range").slider("values", 1));
+
+
+            // задать начальный текст левого span
+            $("#rub-left").text($("#slider-range").slider("values", 0) + 'р.');
+            // задать начальный текст правого span
+            $("#rub-right").text($("#slider-range").slider("values", 1) + 'р.');
+
+
+
+        </script>
+        <script>
+            $(document).ready(function () {
+                $('.js-select2').select2({
+                    maximumSelectionLength: 2,
+                    language: "en"
+                });
+            });
+        </script>
+
+
+
+</body>
+
+</html>

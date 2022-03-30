@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт визитка</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/f125855cea.js"></script>
+    <script src="https://use.fontawesome.com/584b50d8c7.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/select2/dist/css/select2.min.css">
+    <script src="/jquery.min.js"></script>
+    <script src="/select2/dist/js/select2.min.js"></script>
+    <script src="/select2/dist/js/i18n/ru.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-menu-box container">
+            <div class="header-menu--flex">
+                <div class="flex-box-1">
+                    <a href="index.html" class="header-menu__logo--stile">
+                        <img class="header-menu__img" src="img/logo.png" alt="logo">BRAN<span
+                            class="header-menu__logo--stile--d">D</span>
+                    </a>
+                    <div class="form-search">
+                        <div id="filter-input" class="groupinput">
+                            <button class="filterbuttom">Browse <i class="fa fa-caret-down"
+                                    aria-hidden="true"></i></button>
+                            <ul class="dropdown-menu">
+                                <h2 class="dropdown-menu--stile"><a class="dropdown-item" href="#">Women</a>
+                                    </h3>
+                                    <hr class="dropdown-divider dropdown-divider-style">
+                                    <li class="li-item"><a class="drop-item" href="#">Dresses</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Tops</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Sweaters/Knits</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Blazers</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Denim</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Leggings/Pants</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Skirts/Shorts</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Accessories</a></li>
+                                    <h3 class="dropdown-menu--stile"><a class="dropdown-item" href="#">Men</a></h3>
+                                    <hr class="dropdown-divider dropdown-divider-style ">
+                                    <li class="li-item"><a class="drop-item" href="#">Tees/Tank tops</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Shirts/Polos</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Sweaters</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Sweatshirts/Hoodies</a>
+                                    </li>
+                                    <li class="li-item"><a class="drop-item" href="#">Blazers</a></li>
+                                    <li class="li-item"><a class="drop-item" href="#">Jackets/vests</a></li>
+                            </ul>
+                        </div>
+
+                        <input type="text" class="form-cont" placeholder="Search for Item...">
+                        <button class="search-button" type="button" aria-hidden="true"><i class="fa fa-search"
+                                aria-hidden="true"></i></button>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="flex-box-2">
+                    <div class="header-r-block">
+                        <a class="header-r-block__link" href="#"><i class="fa fa-shopping-cart fa-2x"
+                                aria-hidden="true"></i></a>
+                    </div>
+                    <div id="button-basket" class="goods">
+                        <button class="filterbuttom__bc filterbuttom--basket-card">My Account <i
+                                class="fa fa-caret-down marker" aria-hidden="true"></i></button>
+                        <div class="box-goods">
+                            <div class="cart-goods-big cart-goods-big__cgb-flex">
+                                <div class="cart-goods-l">
+                                    <img src="img/cartboxindex1.png" alt="cart">
+                                    <div class="cart-goods-l__content">
+                                        <h3 class=" cart-goods-l__h3">Rebox Zane
+                                        </h3>
+                                        <div class="rating-area">
+                                            <input type="radio" id="star-5" name="rating" value="5">
+                                            <label for="star-5" title="Оценка «5»"></label>
+                                            <input type="radio" id="star-4" name="rating" value="4">
+                                            <label for="star-4" title="Оценка «4»"></label>
+                                            <input type="radio" id="star-3" name="rating" value="3">
+                                            <label for="star-3" title="Оценка «3»"></label>
+                                            <input type="radio" id="star-2" name="rating" value="2">
+                                            <label for="star-2" title="Оценка «2»"></label>
+                                            <input type="radio" id="star-1" name="rating" value="1">
+                                            <label for="star-1" title="Оценка «1»"></label>
+                                        </div>
+                                        <p class="cart-goods-l__p">1 x $250</p>
+
+                                    </div>
+                                </div>
+                                <div class="cart-goods-r">
+                                    <button class="close-button">
+                                        <i class="fa fa-times-circle" aria-hidden="true"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+                            <hr class="dropdown-divider dropdown-divider__bottom-border">
+                            <div class="cart-goods-big cart-goods-big__cgb-flex">
+                                <div class="cart-goods-l">
+                                    <img src="img/cartboxindex2.png" alt="cart">
+                                    <div class="cart-goods-l__content">
+                                        <h3 class=" cart-goods-l__h3">Rebox Zane
+                                        </h3>
+                                        <div class="rating-area">
+                                            <input type="radio" id="star-5" name="rating" value="5">
+                                            <label for="star-5" title="Оценка «5»"></label>
+                                            <input type="radio" id="star-4" name="rating" value="4">
+                                            <label for="star-4" title="Оценка «4»"></label>
+                                            <input type="radio" id="star-3" name="rating" value="3">
+                                            <label for="star-3" title="Оценка «3»"></label>
+                                            <input type="radio" id="star-2" name="rating" value="2">
+                                            <label for="star-2" title="Оценка «2»"></label>
+                                            <input type="radio" id="star-1" name="rating" value="1">
+                                            <label for="star-1" title="Оценка «1»"></label>
+                                        </div>
+                                        <p class="cart-goods-l__p">1 x $250</p>
+
+                                    </div>
+                                </div>
+                                <div class="cart-goods-r">
+                                    <button class="close-button">
+                                        <i class="fa fa-times-circle" aria-hidden="true"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+                            <hr class="dropdown-divider dropdown-divider__bottom-border">
+                            <div class="total total__flex">
+                                <p class="total__p">TOTAL </p>
+                                <p class="total__p">$500.00</p>
+                            </div>
+                            <div class="button-cb">
+                                <button
+                                    class="filterbuttom__bc  filterbuttom--basket-card filterbuttom--new-size filterbuttom--new-margin">Checkout</button>
+                                <button class="filterbuttom__bc filterbuttom--basket-card filterbuttom--new-size ">Go
+                                    to
+                                    cart</button>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+        <hr class="dropdown-divider dropdown-divider__menu">
+        <div class="header-menu-box container">
+            <nav class="mega-menu">
+                <div class="mega-menu__flex">
+                    <div class="mega-menu__margin-r mega-menu__home"> <a class="mega-menu__filter">Home</a>
+                        <div class="mmb-flex">
+                            <div class="mmb-flex__div1">
+                                <ul class="mega-menu-box">
+                                    <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
+                                    <hr class="dropdown-divider dropdown-divider__catalog">
+                                    <li class="li-item li-item--margin "><a class="drop-item drop-item__big-menu"
+                                            href="#">Dresses</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Tops</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Sweaters/Knits</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Blazers</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Denim</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Leggings/Pants</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Skirts/Shorts</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Accessories</a></li>
+
+
+                                </ul>
+                            </div>
+                            <div class="mmb-flex__div1">
+                                <ul class="mega-menu-box">
+                                    <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
+                                    <hr class="dropdown-divider dropdown-divider__catalog">
+                                    <li class="li-item li-item--margin "><a class="drop-item drop-item__big-menu"
+                                            href="#">Dresses</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Tops</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Sweaters/Knits</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Blazers</a>
+                                    </li>
+                                    <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
+                                    <hr class="dropdown-divider dropdown-divider__catalog">
+                                    <li class="li-item li-item--margin "><a class="drop-item drop-item__big-menu"
+                                            href="#">Dresses</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Tops</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Sweaters/Knits</a></li>
+
+                                </ul>
+
+                            </div>
+                            <div class="mmb-flex__div1">
+                                <ul class="mega-menu-box">
+                                    <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
+                                    <hr class="dropdown-divider dropdown-divider__catalog">
+                                    <li class="li-item li-item--margin "><a class="drop-item drop-item__big-menu"
+                                            href="#">Dresses</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Tops</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Sweaters/Knits</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Blazers</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Denim</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Leggings/Pants</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Skirts/Shorts</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Accessories</a></li>
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="mega-menu__margin-r"> <a class="mega-menu__filter">Man</a>
+                    </div>
+                    <div class="mega-menu__margin-r mega-menu__women"> <a class="mega-menu__filter">Women</a>
+                        <div class="mmb-flex mmb-flex__right">
+                            <div class="mmb-flex__div1">
+                                <ul class="mega-menu-box">
+                                    <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
+                                    <hr class="dropdown-divider dropdown-divider__catalog">
+                                    <li class="li-item li-item--margin "><a class="drop-item drop-item__big-menu"
+                                            href="#">Dresses</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Tops</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Sweaters/Knits</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Blazers</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Denim</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Leggings/Pants</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Skirts/Shorts</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Accessories</a></li>
+
+
+                                </ul>
+                            </div>
+                            <div class="mmb-flex__div1">
+                                <ul class="mega-menu-box">
+                                    <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
+                                    <hr class="dropdown-divider dropdown-divider__catalog">
+                                    <li class="li-item li-item--margin "><a class="drop-item drop-item__big-menu"
+                                            href="#">Dresses</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Tops</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Sweaters/Knits</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Blazers</a>
+                                    </li>
+                                    <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
+                                    <hr class="dropdown-divider dropdown-divider__catalog">
+                                    <li class="li-item li-item--margin "><a class="drop-item drop-item__big-menu"
+                                            href="#">Dresses</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Tops</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Sweaters/Knits</a></li>
+
+                                </ul>
+
+                            </div>
+                            <div class="mmb-flex__div1">
+                                <ul class="mega-menu-box">
+                                    <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
+                                    <hr class="dropdown-divider dropdown-divider__catalog">
+                                    <li class="li-item li-item--margin "><a class="drop-item drop-item__big-menu"
+                                            href="#">Dresses</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Tops</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Sweaters/Knits</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Jackets/Coats</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a href="#"><img src="img/menuimg.png"
+                                                alt="foto"></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mega-menu__margin-r mega-menu__kids"> <a class="mega-menu__filter">Kids</a>
+                        <div class="mmb-flex mmb-flex__right">
+                            <div class="mmb-flex__div1">
+                                <ul class="mega-menu-box">
+                                    <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
+                                    <hr class="dropdown-divider dropdown-divider__catalog">
+                                    <li class="li-item li-item--margin "><a class="drop-item drop-item__big-menu"
+                                            href="#">Dresses</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Tops</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Sweaters/Knits</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Blazers</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Denim</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Leggings/Pants</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Skirts/Shorts</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Accessories</a></li>
+
+
+                                </ul>
+                            </div>
+                            <div class="mmb-flex__div1">
+                                <ul class="mega-menu-box">
+                                    <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
+                                    <hr class="dropdown-divider dropdown-divider__catalog">
+                                    <li class="li-item li-item--margin "><a class="drop-item drop-item__big-menu"
+                                            href="#">Dresses</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Tops</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Sweaters/Knits</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Blazers</a>
+                                    </li>
+                                    <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
+                                    <hr class="dropdown-divider dropdown-divider__catalog">
+                                    <li class="li-item li-item--margin "><a class="drop-item drop-item__big-menu"
+                                            href="#">Dresses</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Tops</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Sweaters/Knits</a></li>
+
+                                </ul>
+
+                            </div>
+                            <div class="mmb-flex__div1">
+                                <ul class="mega-menu-box">
+                                    <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
+                                    <hr class="dropdown-divider dropdown-divider__catalog">
+                                    <li class="li-item li-item--margin "><a class="drop-item drop-item__big-menu"
+                                            href="#">Dresses</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Tops</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Sweaters/Knits</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Blazers</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Denim</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Leggings/Pants</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Skirts/Shorts</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Accessories</a></li>
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="mega-menu__margin-r"> <a class="mega-menu__filter">Accoseriese</a>
+                    </div>
+                    <div class="mega-menu__margin-r"> <a class="mega-menu__filter">Featured</a>
+                    </div>
+                    <div class="mega-menu__margin-r mega-menu__hot-deals"> <a class="mega-menu__filter">Hot Deals</a>
+                        <div class="mmb-flex mmb-flex__right">
+                            <div class="mmb-flex__div1">
+                                <ul class="mega-menu-box">
+                                    <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
+                                    <hr class="dropdown-divider dropdown-divider__catalog">
+                                    <li class="li-item li-item--margin "><a class="drop-item drop-item__big-menu"
+                                            href="#">Dresses</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Tops</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Sweaters/Knits</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Blazers</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Denim</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Leggings/Pants</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Skirts/Shorts</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Accessories</a></li>
+
+
+                                </ul>
+                            </div>
+                            <div class="mmb-flex__div1">
+                                <ul class="mega-menu-box">
+                                    <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
+                                    <hr class="dropdown-divider dropdown-divider__catalog">
+                                    <li class="li-item li-item--margin "><a class="drop-item drop-item__big-menu"
+                                            href="#">Dresses</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Tops</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Sweaters/Knits</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Blazers</a>
+                                    </li>
+                                    <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
+                                    <hr class="dropdown-divider dropdown-divider__catalog">
+                                    <li class="li-item li-item--margin "><a class="drop-item drop-item__big-menu"
+                                            href="#">Dresses</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Tops</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Sweaters/Knits</a></li>
+
+                                </ul>
+
+                            </div>
+                            <div class="mmb-flex__div1">
+                                <ul class="mega-menu-box">
+                                    <h2 class="h-menu"><a class="item" href="#">Women</a></h2>
+                                    <hr class="dropdown-divider dropdown-divider__catalog">
+                                    <li class="li-item li-item--margin "><a class="drop-item drop-item__big-menu"
+                                            href="#">Dresses</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Tops</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Sweaters/Knits</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Blazers</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Denim</a>
+                                    </li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Leggings/Pants</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Skirts/Shorts</a></li>
+                                    <li class="li-item li-item--margin"><a class="drop-item drop-item__big-menu"
+                                            href="#">Accessories</a></li>
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </nav>
+        </div>
+        <nav>
+            <div class="breadcrumb-box__big-box">
+                <div class="breadcrumb-box container">
+                    <div class="breadcrumb-box__box-r">
+                        <a class="breadcrumb-box__box-r-info">NEW ARRIVALS</a>
+
+                    </div>
+                    <div class="breadcrumb-box__box-l">
+                        <ul class="breadcrumb-box__ul">
+                            <li><a class="breadcrumb-box__a" href="index.html">HOME / </a></li>
+                            <li><a class="breadcrumb-box__a" href="#">MEN / </a></li>
+                            <li class="active"> NEW ARRIVALS</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <section class="shopping-card container">
+
+
+        <form action="#">
+            <div class="shopping-card__grid">
+                <div class="shopping-card__card-big-box">
+                    <h3 class="shopping-card__h3">Product Details</h3>
+                </div>
+                <div class="shopping-card__price">
+                    <h3 class="shopping-card__h3">unite Price</h3>
+                </div>
+                <div class="shopping-card__quantity">
+                    <h3 class="shopping-card__h3">Quantity</h3>
+                </div>
+                <div class="shopping-card__shipping">
+                    <h3 class="shopping-card__h3">shipping</h3>
+                </div>
+                <div class="shopping-card__subtotal">
+                    <h3 class="shopping-card__h3">Subtotal</h3>
+                </div>
+                <div class="shopping-card__action">
+                    <h3 class="shopping-card__h3">ACTION</h3>
+                </div>
+                <div class="shopping-card__card-big-box">
+                    <div class="shopping-card__card-box">
+                        <div class="shopping-card__card-img-box">
+                            <img src="img/shoppingcard1.png" alt="foto">
+                        </div>
+                        <div class="shopping-card__card-right-box">
+                            <h3 class="shopping-card__card-right-box-h3">Mango People T-shirt</h3>
+                            <p class="shopping-card__card-right-box-p">Color: <span
+                                    class="shopping-card__card-right-box-p--grey"> Red</span></p>
+                            <p class="shopping-card__card-right-box-p">Size: <span
+                                    class="shopping-card__card-right-box-p--grey"> Xll</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shopping-card__price">
+                    <p class="shopping-card__p">
+                        $150
+                    </p>
+                </div>
+                <div class="shopping-card__quantity">
+                    <div class="shopping-card__quantity-box"> <input class="shopping-card__input-quantity" type="text"
+                            value="2" readonly>
+                    </div>
+
+                </div>
+                <div class="shopping-card__shipping">
+                    <p class="shopping-card__p">
+                        FREE
+                    </p>
+                </div>
+                <div class="shopping-card__subtotal">
+                    <p class="shopping-card__p">
+                        $300
+                    </p>
+                </div>
+                <div class="shopping-card__action">
+                    <p class="shopping-card__p--style-icon">
+                        <i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </p>
+
+                </div>
+                <div class="shopping-card__card-big-box">
+                    <div class="shopping-card__card-box">
+                        <div class="shopping-card__card-img-box">
+                            <img src="img/shoppingcard2.png" alt="foto">
+                        </div>
+                        <div class="shopping-card__card-right-box">
+                            <h3 class="shopping-card__card-right-box-h3">Mango People T-shirt</h3>
+                            <p class="shopping-card__card-right-box-p">Color: <span
+                                    class="shopping-card__card-right-box-p--grey"> Red</span></p>
+                            <p class="shopping-card__card-right-box-p">Size: <span
+                                    class="shopping-card__card-right-box-p--grey"> Xll</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shopping-card__price">
+                    <p class="shopping-card__p">
+                        $150
+                    </p>
+                </div>
+                <div class="shopping-card__quantity">
+                    <div class="shopping-card__quantity-box"> <input class="shopping-card__input-quantity" type="text"
+                            value="2" readonly>
+                    </div>
+
+                </div>
+                <div class="shopping-card__shipping">
+                    <p class="shopping-card__p">
+                        FREE
+                    </p>
+                </div>
+                <div class="shopping-card__subtotal">
+                    <p class="shopping-card__p">
+                        $300
+                    </p>
+                </div>
+                <div class="shopping-card__action">
+                    <p class="shopping-card__p--style-icon">
+                        <i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </p>
+
+                </div>
+                <div class="shopping-card__card-big-box">
+                    <div class="shopping-card__card-box">
+                        <div class="shopping-card__card-img-box">
+                            <img src="img/shoppingcard3.png" alt="foto">
+                        </div>
+                        <div class="shopping-card__card-right-box">
+                            <h3 class="shopping-card__card-right-box-h3">Mango People T-shirt</h3>
+                            <p class="shopping-card__card-right-box-p">Color: <span
+                                    class="shopping-card__card-right-box-p--grey"> Red</span></p>
+                            <p class="shopping-card__card-right-box-p">Size: <span
+                                    class="shopping-card__card-right-box-p--grey"> Xll</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shopping-card__price">
+                    <p class="shopping-card__p">
+                        $150
+                    </p>
+                </div>
+                <div class="shopping-card__quantity">
+                    <div class="shopping-card__quantity-box"> <input class="shopping-card__input-quantity" type="text"
+                            value="2" readonly>
+                    </div>
+
+                </div>
+                <div class="shopping-card__shipping">
+                    <p class="shopping-card__p">
+                        FREE
+                    </p>
+                </div>
+                <div class="shopping-card__subtotal">
+                    <p class="shopping-card__p">
+                        $300
+                    </p>
+                </div>
+                <div class="shopping-card__action">
+                    <p class="shopping-card__p--style-icon">
+                        <i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </p>
+
+                </div>
+
+
+            </div>
+            <div class="button-shopping-card">
+                <button class="button-shopping-card__clear-storage" type="submit" name="deleteAll">CLEAR SHOPPING
+                    CART</button>
+                <button class="button-shopping-card__continue-shopping" type="submit" name="contshop">CONTINUE
+                    SHOPPING</button>
+            </div>
+
+        </form>
+
+
+
+        <form action="#" class="form-shopping-card">
+            <div class="form-shopping-card__big-box">
+                <div class="form-shopping-card__block1">
+                    <h3 class="form-shopping-card__block1-h3">Shipping Adress</h3>
+                    <select class="form-shopping-card__select-country" name="value">
+                        <option value="BD">Bangladesh</option>
+                        <option value="AF">Afghanistan</option>
+                        <option value="AX">&Aring;land Islands</option>
+                        <option value="AL">Albania</option>
+                        <option value="DZ">Algeria</option>
+                        <option value="AS">American Samoa</option>
+                        <option value="AD">Andorra</option>
+                        <option value="AO">Angola</option>
+                        <option value="AI">Anguilla</option>
+                        <option value="AQ">Antarctica</option>
+                        <option value="AG">Antigua &amp; Barbuda</option>
+                        <option value="AR">Argentina</option>
+                        <option value="AM">Armenia</option>
+                        <option value="AW">Aruba</option>
+                        <option value="AU">Australia</option>
+                        <option value="AT">Austria</option>
+                        <option value="AZ">Azerbaijan</option>
+                        <option value="BS">Bahamas</option>
+                        <option value="BH">Bahrain</option>
+
+                        <option value="BB">Barbados</option>
+                        <option value="BY">Belarus</option>
+                        <option value="BE">Belgium</option>
+                        <option value="BZ">Belize</option>
+                        <option value="BJ">Benin</option>
+                        <option value="BM">Bermuda</option>
+                        <option value="BT">Bhutan</option>
+                        <option value="BO">Bolivia</option>
+                        <option value="BA">Bosnia &amp; Herzegovina</option>
+                        <option value="BW">Botswana</option>
+                        <option value="BV">Bouvet Island</option>
+                        <option value="BR">Brazil</option>
+                        <option value="IO">British Indian Ocean Territory</option>
+                        <option value="VG">British Virgin Islands</option>
+                        <option value="BN">Brunei</option>
+                        <option value="BG">Bulgaria</option>
+                        <option value="BF">Burkina Faso</option>
+                        <option value="BI">Burundi</option>
+                        <option value="KH">Cambodia</option>
+                        <option value="CM">Cameroon</option>
+                        <option value="CA">Canada</option>
+                        <option value="CV">Cape Verde</option>
+                        <option value="BQ">Caribbean Netherlands</option>
+                        <option value="KY">Cayman Islands</option>
+                        <option value="CF">Central African Republic</option>
+                        <option value="TD">Chad</option>
+                        <option value="CL">Chile</option>
+                        <option value="CN">China</option>
+                        <option value="CX">Christmas Island</option>
+                        <option value="CC">Cocos (Keeling) Islands</option>
+                        <option value="CO">Colombia</option>
+                        <option value="KM">Comoros</option>
+                        <option value="CG">Congo - Brazzaville</option>
+                        <option value="CD">Congo - Kinshasa</option>
+                        <option value="CK">Cook Islands</option>
+                        <option value="CR">Costa Rica</option>
+                        <option value="CI">C&ocirc;te d&rsquo;Ivoire</option>
+                        <option value="HR">Croatia</option>
+                        <option value="CU">Cuba</option>
+                        <option value="CW">Cura&ccedil;ao</option>
+                        <option value="CY">Cyprus</option>
+                        <option value="CZ">Czechia</option>
+                        <option value="DK">Denmark</option>
+                        <option value="DJ">Djibouti</option>
+                        <option value="DM">Dominica</option>
+                        <option value="DO">Dominican Republic</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="EG">Egypt</option>
+                        <option value="SV">El Salvador</option>
+                        <option value="GQ">Equatorial Guinea</option>
+                        <option value="ER">Eritrea</option>
+                        <option value="EE">Estonia</option>
+                        <option value="SZ">Eswatini</option>
+                        <option value="ET">Ethiopia</option>
+                        <option value="FK">Falkland Islands</option>
+                        <option value="FO">Faroe Islands</option>
+                        <option value="FJ">Fiji</option>
+                        <option value="FI">Finland</option>
+                        <option value="FR">France</option>
+                        <option value="GF">French Guiana</option>
+                        <option value="PF">French Polynesia</option>
+                        <option value="TF">French Southern Territories</option>
+                        <option value="GA">Gabon</option>
+                        <option value="GM">Gambia</option>
+                        <option value="GE">Georgia</option>
+                        <option value="DE">Germany</option>
+                        <option value="GH">Ghana</option>
+                        <option value="GI">Gibraltar</option>
+                        <option value="GR">Greece</option>
+                        <option value="GL">Greenland</option>
+                        <option value="GD">Grenada</option>
+                        <option value="GP">Guadeloupe</option>
+                        <option value="GU">Guam</option>
+                        <option value="GT">Guatemala</option>
+                        <option value="GG">Guernsey</option>
+                        <option value="GN">Guinea</option>
+                        <option value="GW">Guinea-Bissau</option>
+                        <option value="GY">Guyana</option>
+                        <option value="HT">Haiti</option>
+                        <option value="HM">Heard &amp; McDonald Islands</option>
+                        <option value="HN">Honduras</option>
+                        <option value="HK">Hong Kong SAR China</option>
+                        <option value="HU">Hungary</option>
+                        <option value="IS">Iceland</option>
+                        <option value="IN">India</option>
+                        <option value="ID">Indonesia</option>
+                        <option value="IR">Iran</option>
+                        <option value="IQ">Iraq</option>
+                        <option value="IE">Ireland</option>
+                        <option value="IM">Isle of Man</option>
+                        <option value="IL">Israel</option>
+                        <option value="IT">Italy</option>
+                        <option value="JM">Jamaica</option>
+                        <option value="JP">Japan</option>
+                        <option value="JE">Jersey</option>
+                        <option value="JO">Jordan</option>
+                        <option value="KZ">Kazakhstan</option>
+                        <option value="KE">Kenya</option>
+                        <option value="KI">Kiribati</option>
+                        <option value="KW">Kuwait</option>
+                        <option value="KG">Kyrgyzstan</option>
+                        <option value="LA">Laos</option>
+                        <option value="LV">Latvia</option>
+                        <option value="LB">Lebanon</option>
+                        <option value="LS">Lesotho</option>
+                        <option value="LR">Liberia</option>
+                        <option value="LY">Libya</option>
+                        <option value="LI">Liechtenstein</option>
+                        <option value="LT">Lithuania</option>
+                        <option value="LU">Luxembourg</option>
+                        <option value="MO">Macao SAR China</option>
+                        <option value="MG">Madagascar</option>
+                        <option value="MW">Malawi</option>
+                        <option value="MY">Malaysia</option>
+                        <option value="MV">Maldives</option>
+                        <option value="ML">Mali</option>
+                        <option value="MT">Malta</option>
+                        <option value="MH">Marshall Islands</option>
+                        <option value="MQ">Martinique</option>
+                        <option value="MR">Mauritania</option>
+                        <option value="MU">Mauritius</option>
+                        <option value="YT">Mayotte</option>
+                        <option value="MX">Mexico</option>
+                        <option value="FM">Micronesia</option>
+                        <option value="MD">Moldova</option>
+                        <option value="MC">Monaco</option>
+                        <option value="MN">Mongolia</option>
+                        <option value="ME">Montenegro</option>
+                        <option value="MS">Montserrat</option>
+                        <option value="MA">Morocco</option>
+                        <option value="MZ">Mozambique</option>
+                        <option value="MM">Myanmar (Burma)</option>
+                        <option value="NA">Namibia</option>
+                        <option value="NR">Nauru</option>
+                        <option value="NP">Nepal</option>
+                        <option value="NL">Netherlands</option>
+                        <option value="NC">New Caledonia</option>
+                        <option value="NZ">New Zealand</option>
+                        <option value="NI">Nicaragua</option>
+                        <option value="NE">Niger</option>
+                        <option value="NG">Nigeria</option>
+                        <option value="NU">Niue</option>
+                        <option value="NF">Norfolk Island</option>
+                        <option value="KP">North Korea</option>
+                        <option value="MK">North Macedonia</option>
+                        <option value="MP">Northern Mariana Islands</option>
+                        <option value="NO">Norway</option>
+                        <option value="OM">Oman</option>
+                        <option value="PK">Pakistan</option>
+                        <option value="PW">Palau</option>
+                        <option value="PS">Palestinian Territories</option>
+                        <option value="PA">Panama</option>
+                        <option value="PG">Papua New Guinea</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="PE">Peru</option>
+                        <option value="PH">Philippines</option>
+                        <option value="PN">Pitcairn Islands</option>
+                        <option value="PL">Poland</option>
+                        <option value="PT">Portugal</option>
+                        <option value="PR">Puerto Rico</option>
+                        <option value="QA">Qatar</option>
+                        <option value="RE">R&eacute;union</option>
+                        <option value="RO">Romania</option>
+                        <option value="RU">Russia</option>
+                        <option value="RW">Rwanda</option>
+                        <option value="WS">Samoa</option>
+                        <option value="SM">San Marino</option>
+                        <option value="ST">S&atilde;o Tom&eacute; &amp; Pr&iacute;ncipe</option>
+                        <option value="SA">Saudi Arabia</option>
+                        <option value="SN">Senegal</option>
+                        <option value="RS">Serbia</option>
+                        <option value="SC">Seychelles</option>
+                        <option value="SL">Sierra Leone</option>
+                        <option value="SG">Singapore</option>
+                        <option value="SX">Sint Maarten</option>
+                        <option value="SK">Slovakia</option>
+                        <option value="SI">Slovenia</option>
+                        <option value="SB">Solomon Islands</option>
+                        <option value="SO">Somalia</option>
+                        <option value="ZA">South Africa</option>
+                        <option value="GS">South Georgia &amp; South Sandwich Islands</option>
+                        <option value="KR">South Korea</option>
+                        <option value="SS">South Sudan</option>
+                        <option value="ES">Spain</option>
+                        <option value="LK">Sri Lanka</option>
+                        <option value="BL">St. Barth&eacute;lemy</option>
+                        <option value="SH">St. Helena</option>
+                        <option value="KN">St. Kitts &amp; Nevis</option>
+                        <option value="LC">St. Lucia</option>
+                        <option value="MF">St. Martin</option>
+                        <option value="PM">St. Pierre &amp; Miquelon</option>
+                        <option value="VC">St. Vincent &amp; Grenadines</option>
+                        <option value="SD">Sudan</option>
+                        <option value="SR">Suriname</option>
+                        <option value="SJ">Svalbard &amp; Jan Mayen</option>
+                        <option value="SE">Sweden</option>
+                        <option value="CH">Switzerland</option>
+                        <option value="SY">Syria</option>
+                        <option value="TW">Taiwan</option>
+                        <option value="TJ">Tajikistan</option>
+                        <option value="TZ">Tanzania</option>
+                        <option value="TH">Thailand</option>
+                        <option value="TL">Timor-Leste</option>
+                        <option value="TG">Togo</option>
+                        <option value="TK">Tokelau</option>
+                        <option value="TO">Tonga</option>
+                        <option value="TT">Trinidad &amp; Tobago</option>
+                        <option value="TN">Tunisia</option>
+                        <option value="TR">Turkey</option>
+                        <option value="TM">Turkmenistan</option>
+                        <option value="TC">Turks &amp; Caicos Islands</option>
+                        <option value="TV">Tuvalu</option>
+                        <option value="UM">U.S. Outlying Islands</option>
+                        <option value="VI">U.S. Virgin Islands</option>
+                        <option value="UG">Uganda</option>
+                        <option value="UA">Ukraine</option>
+                        <option value="AE">United Arab Emirates</option>
+                        <option value="GB">United Kingdom</option>
+                        <option value="US">United States</option>
+                        <option value="UY">Uruguay</option>
+                        <option value="UZ">Uzbekistan</option>
+                        <option value="VU">Vanuatu</option>
+                        <option value="VA">Vatican City</option>
+                        <option value="VE">Venezuela</option>
+                        <option value="VN">Vietnam</option>
+                        <option value="WF">Wallis &amp; Futuna</option>
+                        <option value="EH">Western Sahara</option>
+                        <option value="YE">Yemen</option>
+                        <option value="ZM">Zambia</option>
+                        <option value="ZW">Zimbabwe</option>
+                    </select>
+                    <div>
+                        <input type="text" class="form-shopping-card__state" placeholder="State">
+                    </div>
+                    <div>
+                        <input type="text" class="form-shopping-card__postcode" placeholder="Postcode / Zip">
+                    </div>
+                    <button class="form-shopping-card__button-get-a-quote" type="submit">get a quote</button>
+
+
+
+
+                </div>
+
+                <div class="form-shopping-card__block2">
+
+                    <h3 class="form-shopping-card__block1-h3">coupon discount</h3>
+                    <p class="form-shopping-card__block2-p">Enter your coupon code if you have one
+                    </p>
+                    <div>
+                        <input class="form-shopping-card__block2-input" type="text" class="">
+                    </div>
+
+                    <button class="form-shopping-card__button-apply-coupon">Apply coupon</button>
+                </div>
+
+                <div class="form-shopping-card__block3">
+                    <div class="form-shopping-card__block3-big-box">
+                        <div class="form-shopping-card__block3-box-right">
+                            <p class="form-shopping-card__block3-box-right-p"> Sub total <span
+                                    class="form-shopping-card__block3-box-right-p--margin">$900</span> </p>
+                            <h3 class="form-shopping-card__block3-box-right-h3"> GRAND TOTAL <span
+                                    class="form-shopping-card__block3-box-right--red">$900</span></h3>
+                        </div>
+
+                        <hr>
+                        <button class="form-shopping-card__block3-box-right-button-checkout" type="submit"> <a
+                                class="form-shopping-card__block3-box-right-button-checkout-a"
+                                href="checkout.html">proceed to
+                                checkout</a> </button>
+
+                    </div>
+
+
+
+
+                </div>
+
+
+            </div>
+
+
+        </form>
+
+    </section>
+
+
+
+
+
+    <footer class="background-footer background-footer__margin-none  ">
+        <img class="background-footer__img" src="img/footerback.png" alt="footer">
+        <div class="footer container">
+            <div class="footer__grid container ">
+                <div class="footer__grid-left">
+                    <aside class="footer__flex-review">
+                        <img class="footer__img-review" src="img/reviewfoto.png" alt="foto">
+                        <p style="text-align: left;" class="footer__review-p1">“Vestibulum quis
+                            porttitor dui! Quisque
+                            viverra nunc mi,
+                            a pulvinar purus condimentum a. Aliquam condimentum mattis neque
+                            sed pretium”<br><br><span class="footer__review-p2--red">Bin
+                                Burhan</span><br> <span class="footer__review-p2"></span>Dhaka, Bd</p><br>
+
+                    </aside>
+                    <div class="block-bottom-big">
+                        <div class="block1"></div>
+                        <div class="block1__color-block"></div>
+                        <div class="block1"></div>
+
+                    </div>
+
+
+                </div>
+                <div class="footer__grid-right">
+                    <div class="grid-right-box">
+                        <h3 class="footer__input-h3">Subscribe</h3>
+                        <h4 class="footer__input-h4">FOR OUR NEWLETTER AND PROMOTION</h4>
+                        <form action="#">
+                            <div class="form-email-big-box">
+                                <div class="form-email">
+                                    <input class="form-email__input" type="text" placeholder="Enter Your Email"
+                                        name="mail" required>
+                                </div>
+                                <div class="form-email__submit">
+                                    <input class="form-email__submit-button" type="submit" value="Subscribe">
+                                </div>
+
+                            </div>
+
+
+                        </form>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </footer>
+    <footer class="footer-2 container">
+        <div class="footer-2__left-box">
+            <a href="#" class="header-menu__logo--stile">
+                <img class="header-menu__img" src="img/logo.png" alt="logo">BRAN<span
+                    class="header-menu__logo--stile--d">D</span>
+            </a>
+            <p class="footer-2__p">Objectively transition extensive data rather than cross functional
+                solutions. Monotonectally
+                syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate
+                an expanded array of processes and cross-unit partnerships. <br> <br>
+                Efficiently plagiarize 24/365 action items and focused infomediaries.
+                Distinctively seize superior initiatives for wireless technologies. Dynamically
+                optimize.
+            </p>
+        </div>
+        <div class="footer-2__right-box">
+            <div class="information__block-1">
+                <h3 class="information__h3"><a href="" class="information__a-h3">COMPANY</a></h3>
+                <ul class="information__ul">
+                    <li class="information__li"><a href="" class="information__a">Home</a></li>
+                    <li class="information__li"><a href="" class="information__a">Shop</a></li>
+                    <li class="information__li"><a href="" class="information__a">About</a></li>
+                    <li class="information__li"><a href="" class="information__a">How It Works</a>
+                    </li>
+                    <li class="information__li"><a href="" class="information__a">Contact</a></li>
+                </ul>
+
+            </div>
+            <div class="information__block-2">
+                <h3 class="information__h3"><a href="" class="information__a-h3">INFORMATION</a></h3>
+                <ul class="information__ul">
+                    <li class="information__li"><a href="" class="information__a">Tearms &
+                            Condition</a></li>
+                    <li class="information__li"><a href="" class="information__a">Privacy Policy</a>
+                    </li>
+                    <li class="information__li"><a href="" class="information__a">How to Buy</a>
+                    </li>
+                    <li class="information__li"><a href="" class="information__a">How to Sell</a>
+                    </li>
+                    <li class="information__li"><a href="" class="information__a">Promotion</a></li>
+
+                </ul>
+
+            </div>
+            <div class="information__block-3">
+                <h3 class="information__h3"><a href="" class="information__a-h3">SHOP CATEGORY</a></h3>
+                <ul class="information__ul">
+                    <li class="information__li"><a href="" class="information__a">Men</a></li>
+                    <li class="information__li"><a href="" class="information__a">Women</a></li>
+                    <li class="information__li"><a href="" class="information__a">Child</a></li>
+                    <li class="information__li"><a href="" class="information__a">Apparel</a></li>
+                    <li class="information__li"><a href="" class="information__a">Brows All</a></li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+
+    </footer>
+    <div class="footer-bottom">
+        <div class="footer-bottom-big container">
+            <div class="footer-bottom-box1">
+                <p class="footer-bottom-box-text">© 2021 Brand All Rights Reserved.</p>
+            </div>
+            <div class="footer-bottom-box2">
+                <div class="footer-box1">
+                    <i class="fa fa-facebook fa-block" aria-hidden="true"></i>
+                </div>
+                <div class="footer-box1">
+                    <i class="fa fa-instagram fa-block" aria-hidden="true"></i>
+                </div>
+                <div class="footer-box1">
+                    <i class="fa fa-pinterest-p fa-block" aria-hidden="true"></i>
+                </div>
+                <div class="footer-box1">
+                    <i class="fa fa-twitter fa-block" aria-hidden="true"></i>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+        <script>
+            let goodsElem = document.getElementById('button-basket');
+            let filterbuttom__bcElem = goodsElem.querySelector('.filterbuttom__bc');
+
+            filterbuttom__bcElem.onclick = function () {
+                goodsElem.classList.toggle('open');
+            };
+        </script>
+        <script>
+            let groupinputElem = document.getElementById('filter-input');
+            let filterbuttomElem = groupinputElem.querySelector('.filterbuttom');
+
+            filterbuttomElem.onclick = function () {
+                groupinputElem.classList.toggle('open');
+            };
+
+        </script>
+        <script>
+            $("#slider-range").slider({
+                range: true,
+                min: 0,
+                max: 600,
+                values: [52, 400],
+                step: 1,
+                slide: function (event, ui) {
+                    $("#rub-left").text(ui.values[0] + 'р.'); // текст левого span
+                    $("#rub-right").text(ui.values[1] + 'р.'); // текст правого span
+                }
+            });
+            $("#price").val("$" + $("#slider-range").slider("values", 0) +
+                " - $" + $("#slider-range").slider("values", 1));
+
+
+            // задать начальный текст левого span
+            $("#rub-left").text($("#slider-range").slider("values", 0) + 'р.');
+            // задать начальный текст правого span
+            $("#rub-right").text($("#slider-range").slider("values", 1) + 'р.');
+
+
+
+        </script>
+        <script>
+            $(document).ready(function () {
+                $('.js-select2').select2({
+                    maximumSelectionLength: 2,
+                    language: "en"
+                });
+            });
+        </script>
+
+
+
+</body>
+
+</html>
