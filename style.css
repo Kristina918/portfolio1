@@ -70,13 +70,10 @@ body {
   min-height: 2.375em;
 }
 
-.goods:last-child.open .box-goods {
-  left: auto;
-  right: 0;
-}
-
 .box-goods {
+  display: none;
   position: absolute;
+  right: 5%;
   width: 262px;
   height: 440px;
   border-radius: 5px;
@@ -1135,7 +1132,7 @@ body {
 
 .footer__review-p1 {
   max-width: 24.125em;
-  text-align: left, !important;
+  text-align: left,  !important;
   color: #222224;
   margin-bottom: 18px;
   font-family: "Lato";
@@ -1866,7 +1863,7 @@ body {
   font-weight: 400;
   color: #6f6e6e;
   background-color: transparent;
-  border-right: 2px solid  #dfdfdf;
+  border-right: 2px solid #dfdfdf;
   border-left: none;
   border-top: none;
   border-bottom: none;
@@ -1907,7 +1904,12 @@ body {
   display: block;
 }
 
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
   background-color: #ef5b70;
   width: 14px;
   height: 14px;
@@ -2485,12 +2487,6 @@ body {
   height: 50px;
   border: 1px solid #f16d7f;
   background-color: #f16d7f;
-}
-
-.form-shopping-card__block3-box-right-button-checkout-a {
-  text-decoration: none;
-  height: 100%;
-  width: 100%;
   font-family: "Lato";
   font-size: 16px;
   line-height: 1.2;
@@ -2513,9 +2509,6 @@ body {
 
 .form-shopping-card__block3-box-right-button-checkout:hover {
   background-color: #ffffff;
-}
-
-.form-shopping-card__block3-box-right-button-checkout:hover a {
   color: #f16d7f;
 }
 
@@ -2727,6 +2720,10 @@ body {
 
 .stock__img1380 {
   display: none;
+}
+
+.header-r-block:hover .box-goods {
+  display: block;
 }
 
 @media (max-width: 1200px) {
@@ -3328,7 +3325,7 @@ body {
     padding: 0;
     max-width: 380px;
   }
-  .filterbuttom--basket-card {
+  .goods {
     display: none;
   }
   .header-menu__logo--stile {
@@ -3466,7 +3463,8 @@ body {
   .w-100 {
     width: 100% !important;
   }
-  .carousel-control-next, .carousel-control-prev {
+  .carousel-control-next,
+  .carousel-control-prev {
     max-height: 500px;
   }
   .product-description__block-1 {
