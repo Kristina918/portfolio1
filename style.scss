@@ -3730,3 +3730,14 @@ html .ui-button.ui-state-disabled:active {
         width: 92%;
     }
 }
+
+@media (min-width: 1140px) {
+    .box-goods {
+        position: fixed;
+        left: auto;
+        right: auto;
+        top: auto;
+    }
+
+
+}
